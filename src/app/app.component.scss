@@ -1,0 +1,62 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  background: #000000;
+  color: #ffffff;
+}
+
+.mat-toolbar.main {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.main{
+  text-align: right;
+}
+
+.mat-list-item {
+    color: #ffffff;
+}
+
+mat-toolbar.footer {
+    font-size: 12px;
+    font-weight: 300;
+}
+.footer {
+color: white;
+background: transparent;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 13%;
+
+
+}
+.active-route,
+a.mat-list-item:hover {
+    font-weight: 500;
+    background: rgb(var(--arbitrary-gray-rgb));
+}
+
+mat-sidenav-content {
+    background: black;
+    color: white;
+}
+.btn{
+  color: white;
+  background-color: cornflowerblue;
+  border-radius: 0px;
+  background-color: gray;
+  padding: 4px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  }
+.btn:hover{
+  background-color: green;
+  }
+  .btnn{
+    text-align: right;
+  }

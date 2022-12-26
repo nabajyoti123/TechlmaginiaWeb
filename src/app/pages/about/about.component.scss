@@ -1,0 +1,47 @@
+p {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.headFont{
+    margin-top: 60px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.normalFont{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+mat-card {
+    max-width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+mat-card-subtitle {
+    color: whitesmoke;
+}
+
+.mat-card-avatar {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 16px;
+}
+
+.jaxon-image {
+    background-image: url('../about/nabajyoti.jpg');
+    background-size: cover;
+}
+
+.ben-image {
+    background-image: url('./nabajyoti.jpg');
+    background-size: cover;
+}

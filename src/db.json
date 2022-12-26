@@ -1,0 +1,9 @@
+{
+    "enquiry":[
+
+            { "id": 1, "fullName": "Hydrogen", "email": "jaga", "phoneNo" : "1210", "organization" : "H","subject":"hgf","content":"kjuytf","date":"jhg"},
+            { "id": 2, "fullName": "Hydrogen", "email": "jaga", "phoneNo" : "1210", "organization" : "H","subject":"hgf","content":"kjuytf","date":"jhg"},
+            {"id": 3, "fullName": "Hydrogen", "email": "jaga", "phoneNo" : "1210", "organization" : "H","subject":"hgf","content":"kjuytf","date":"jhg"}
+
+    ]
+}

@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Welcome Techlmaginia</h1>
+<div mat-dialog-content>
+  <p>Enter userName</p>
+  <mat-form-field appearance="fill">
+    <mat-label>userName</mat-label>
+    <input matInput [(ngModel)]="userName">
+  </mat-form-field>
+  <p>passWord</p>
+  <mat-form-field appearance="fill">
+    <mat-label>password</mat-label>
+    <input matInput [(ngModel)]="password">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <a mat-button (click)="onNoClick()">forgot passWord</a>
+  <button mat-button [mat-dialog-close]="data.userName" cdkFocusInitial
+  (click)="loginAndRedirect()"
+
+  >login</button>
+  
+</div>

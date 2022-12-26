@@ -1,0 +1,55 @@
+<div class="container-fluid">
+
+    <div class="card" style="width: 80%;margin: 5px auto;">
+        <div class="card-header" style="color: cornflowerblue;">
+           Please Submit your Query
+        </div>
+        <div class="card-body">
+            <form (ngSubmit) = "onSubmit()" [formGroup]="register" >
+                <div class="form-group">
+                    <label for="name">FullName</label>
+                    <input [(ngModel)]="Enquiry.fullName" id="name" placeholder="fullName" name="name" class="form-control" formControlName="uname" type="text">
+                    <span *ngIf="vname&&vname.touched && vname.invalid" style="color: red;">Please enter a valid name</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input [(ngModel)]="Enquiry.email" id="email" placeholder="valid email" name="email" class="form-control" formControlName="email" type="text">
+                    <span *ngIf="vemail&&vemail.touched && vemail.invalid" style="color: red;">Please enter a valid email</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="PhoneNo">PhoneNo</label>
+                    <input [(ngModel)]="Enquiry.phoneNo" id="PhoneNo" placeholder="phoneNo" name="phone" class="form-control" formControlName="number" type="text">
+                    <span *ngIf="vnumber&&vnumber.touched && vnumber.invalid" style="color: red;">Please enter your 10 digit phone no</span> 
+                   
+                </div>
+                <div class="form-group">
+                    <label for="organization">organization</label>
+                    <input [(ngModel)]="Enquiry.organization" name="organization" id="address" placeholder="organization" class="form-control"  formControlName="organization"type="text">
+                    <span *ngIf="vorganization&&vorganization.touched && vorganization.invalid" style="color: red;">Please enter a valid organization</span> 
+                </div>
+                <div class="form-group">
+                    <label for="subject">subject</label>
+                    <input [(ngModel)]="Enquiry.subject" name="subject" id="address" placeholder="subject" class="form-control" formControlName="subject" type="text">
+                    <span *ngIf="vsubject &&vsubject.touched && vsubject.invalid" style="color: red;">Please enter a valid subject</span>
+                </div>
+                <div class="form-group">
+                    <label for="content">content</label>
+                    <textarea  [(ngModel)]="Enquiry.content" name="content" id="address" placeholder="content" class="form-control" formControlName="content" type="text">
+                    </textarea>
+                    <span *ngIf="vcontent && vcontent.touched && vcontent.invalid" style="color: red;">Please enter a valid address</span>
+                </div>
+
+                <button class="btn btn-primary" (click)="saveStudent()">Save</button>
+            </form>
+        </div>
+        <div class="card-footer" *ngIf="showAlert">
+            <div class="alert alert-success">
+                <button (click)="closeAlert()" class="close">
+                    &times;
+                </button>
+                <strong>Success</strong>
+            </div>
+        </div>
+    </div>
+</div>
