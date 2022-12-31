@@ -35,7 +35,7 @@ export class SignInDialogComponent implements OnInit {
   loginAndRedirect(){
     //alert(this.userName)
     
-    if(this.userName=='admin'&&this.password=='password123'){
+    if(this.userName=='admin'&&this.password=='testpass'){
       //alert(2)
       this.authService.isAuthenticated=true;
       if( this.authService.isAuthenticated==true){

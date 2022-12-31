@@ -17,8 +17,8 @@ export class EnquiryService {
     
    
   }
-  baseURL="http://localhost:8081/v1/webportal/enquiry";
- // baseURL="http://localhost:8080/v1/webportal/enquiry";
+ // baseURL="http://localhost:8081/v1/webportal/enquiry";
+  baseURL="https://backend-373311.uw.r.appspot.com/v1/webportal/enquiry";
 
     createEnquiry(Enquiry: Enquiry) {
       let headers= new HttpHeaders({
@@ -32,7 +32,7 @@ export class EnquiryService {
 
 
       return this.http.post(this.baseURL + "/create", Enquiry,{headers: headers})
-      .pipe(retry(1), catchError(this.handleError));
+      .pipe(retry(0), catchError(this.handleError));
     }
     getEnquiryBetweenDate(startDate:string,endDate: string):Observable<Enquiry[]>{
      let headers= new HttpHeaders({
@@ -45,9 +45,9 @@ export class EnquiryService {
       })
 
 
-      let getEmpByDateUrl= this.baseURL +'betweenDates?startDate='+startDate+'&endDate='+endDate;
+      let getEmpByDateUrl= this.baseURL +'/betweenDates?startDate='+startDate+'&endDate='+endDate;
       return this.http.get<Enquiry[]>(getEmpByDateUrl,{headers: headers})
-      .pipe(retry(1), catchError(this.handleError));
+      .pipe(retry(0), catchError(this.handleError));
 
     }
 
