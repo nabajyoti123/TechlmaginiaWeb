@@ -17,8 +17,8 @@ export class EnquiryService {
     
    
   }
- // baseURL="http://localhost:8081/v1/webportal/enquiry";
-  baseURL="https://backend-373311.uw.r.appspot.com/v1/webportal/enquiry";
+  //baseURL="http://localhost:8081/v2/webportal/enquiry";
+  baseURL="https://backend-379006.uw.r.appspot.com/v2/webportal/enquiry";
 
     createEnquiry(Enquiry: Enquiry) {
       let headers= new HttpHeaders({

@@ -5,7 +5,7 @@
            Please Submit your Query
         </div>
         <div class="card-body">
-            <form (ngSubmit) = "onSubmit()" [formGroup]="register" >
+            <form  [formGroup]="register" >
                 <div class="form-group">
                     <label for="name">FullName</label>
                     <input [(ngModel)]="Enquiry.fullName" id="name" placeholder="fullName" name="name" class="form-control" formControlName="uname" type="text">

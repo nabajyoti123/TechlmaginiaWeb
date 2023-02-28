@@ -58,11 +58,7 @@ register =new FormGroup({
     }
     )
 }
-onSubmit(){
-  console.log(this.Enquiry);
-  this.saveStudent();
- console.log(this.register.value)
-}
+
 
 get vname(){
   return this.register.get("uname");
