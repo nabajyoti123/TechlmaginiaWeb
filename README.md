@@ -39,7 +39,7 @@ firebase login
 
 firebase init
 
-npm run start
+npm run build
 
 # change firebase build location to dist/techlmaginia-ui
 
