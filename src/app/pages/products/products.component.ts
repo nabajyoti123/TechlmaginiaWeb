@@ -31,11 +31,12 @@ export class ProductsComponent implements OnInit {
     this.authService.isAuthenticated=false
     this.productionProds = [
       {
-        name: 'autohome',
-        desc: `a mobile or website controlled device to automate home electrical appliances`,
-        logoURL : '',
+        name: 'PayingGuest',
+        desc: `a website to find a Pg/Hostel By Tenants.
+        Even Pg owners can store Tenants Info and documents here for easy access .`,
+        logoURL : 'my-pg.in',
         repoURL : '',
-        prodURL : '',
+        prodURL : 'my-pg.in',
         license : 'GPL-3.0',
         font    : 'Cairo',
       }
@@ -43,11 +44,11 @@ export class ProductsComponent implements OnInit {
 
     this.devProds = [
       {
-        name: 'autohome',
-        desc: `a mobile or website controlled device to automate home electrical appliances`,
+        name: 'Colours Wager',
+        desc: `a website to bid & play with colours . win and take money .`,
         logoURL : '',
-        repoURL : 'https://github.com/arbitrarydot/copilot',
-        prodURL : '',
+        repoURL : '',
+        prodURL : 'colours-wager.web.app',
         license : '',
         font    : 'ABeeZee', 
       }/*,
