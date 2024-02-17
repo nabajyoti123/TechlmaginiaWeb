@@ -39,6 +39,15 @@ export class ProductsComponent implements OnInit {
         prodURL : 'my-pg.in',
         license : 'GPL-3.0',
         font    : 'Cairo',
+      },
+      {
+        name: 'Tools-ai',
+        desc: `All latest ai tools available here . like extracting context from image to pdf/docx .`,
+        logoURL : 'https://toolsai-app.web.app/client/img2pdf',
+        repoURL : '',
+        prodURL : 'https://toolsai-app.web.app/client/img2pdf',
+        license : 'GPL-3.0',
+        font    : 'Cairo',
       }
     ]
 
@@ -51,6 +60,15 @@ export class ProductsComponent implements OnInit {
         prodURL : 'colours-wager.web.app',
         license : '',
         font    : 'ABeeZee', 
+      },
+      {
+        name: 'WeStream',
+        desc: `People can buy datapacks for satelite phones (Available in Europe & USA)`,
+        logoURL : 'https://test-portal.we.stream/data-plans',
+        repoURL : '',
+        prodURL : 'https://test-portal.we.stream/data-plans',
+        license : 'GPL-3.0',
+        font    : 'Cairo',
       }/*,
       {
         name: 'testla',
