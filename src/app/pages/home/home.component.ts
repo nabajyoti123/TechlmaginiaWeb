@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private title : Title,private empService : EnquiryService
    , private authService:AuthService, ) { 
-    this.title.setTitle('arbitrary - home');
+    this.title.setTitle('Techlmaginia Softwares');
   }
 
   ngOnInit(): void {

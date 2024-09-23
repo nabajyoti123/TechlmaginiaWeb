@@ -7,10 +7,11 @@
       <img src="../assets/Logo.png" style="height: 40px; margin-left: auto; margin-right: auto">
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route" [routerLinkActiveOptions]="{exact: true}">home</a>
-      <a mat-list-item [routerLink]="['products']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route">products</a>
-      <a mat-list-item [routerLink]="['about']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route">about</a>
-      <a mat-list-item [routerLink]="['contactUs']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route">contact us</a>
+      <a mat-list-item [routerLink]="['/']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a mat-list-item [routerLink]="['products']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route">Products</a>
+      <a mat-list-item [routerLink]="['about']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route">About</a>
+      <a mat-list-item [routerLink]="['contactUs']" (click)="handleDrawerClick(drawer)" routerLinkActive="active-route">Contact Us</a>
+      <a mat-list-item (click)="openDialog()" routerLinkActive="active-route">Sign In</a>
     </mat-nav-list>
     <mat-toolbar class="footer" >
      &copy; {{currentYear}} Techlmaginia
@@ -18,11 +19,7 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar class="main" color="primary">
-      <div mat-button class="btnn" style="height:30px;  width:100%;">   
-        <button class="btn" type="button" style="height: 30px" 
-     (click)="openDialog()" 
-        >SignIn</button>
-        </div>
+      
       <button
         type="button"
         aria-label="Toggle sidenav"

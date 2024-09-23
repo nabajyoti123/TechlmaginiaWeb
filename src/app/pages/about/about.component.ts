@@ -12,7 +12,7 @@ import { EnquiryService } from 'src/app/service/enquiry.service';
 export class AboutComponent implements OnInit {
 
   constructor(private title : Title,private empService : EnquiryService, private authService:AuthService, ) { 
-    this.title.setTitle('arbitrary - about');
+    this.title.setTitle('Techlmaginia Softwares');
   }
 
   ngOnInit(): void {

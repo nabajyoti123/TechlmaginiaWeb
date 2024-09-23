@@ -27,7 +27,7 @@ mat-card {
 }
 
 mat-card-subtitle {
-    color: whitesmoke;
+    color: rgb(67, 67, 67)
 }
 
 .mat-card-avatar {
@@ -45,3 +45,16 @@ mat-card-subtitle {
     background-image: url('./nabajyoti.jpg');
     background-size: cover;
 }
+.card{
+    width: 50%;
+    background-color: transparent;
+    margin-left: 20%;
+ }
+
+ @media (max-width: 850px) {
+    .card{
+        width: 80%;
+        background-color: transparent;
+        margin-left: 10%;
+     }
+ }

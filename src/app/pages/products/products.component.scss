@@ -1,5 +1,6 @@
 .product-card {
-    max-width: 400px;
+    max-width: 80%;
+    margin-top: 15px;
 }
 
 h1 {
@@ -15,3 +16,17 @@ mat-card-title {
     font-size: 30px !important;
     margin-left: -16px;
 }
+
+.card{
+    width: 50%;
+    background-color: transparent;
+    margin-left: 20%;
+ }
+
+ @media (max-width: 850px) {
+    .card{
+        width: 100%;
+        background-color: transparent;
+        margin-left: 10%;
+     }
+ }

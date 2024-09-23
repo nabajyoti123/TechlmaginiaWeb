@@ -13,6 +13,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ng build --prod --outputHashing=all
+
+
+## SEARCH ENGINE OPTIMIZATION
+npm i @nguniversal/express-engine --force
+npm i -D express webpack ts-loader --force 
 
 ## Running unit tests
 

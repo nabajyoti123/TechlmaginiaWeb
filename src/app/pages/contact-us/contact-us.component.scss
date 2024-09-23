@@ -19,3 +19,15 @@ btn {
     .btn:hover{
         background-color: green;
         }
+.card{
+   width: 50%;
+   margin-left: 20%;
+}
+
+@media (max-width: 850px) {
+    .card{
+        width: 80%;
+        background-color: white;
+        margin-left: 10%;
+     }
+ }

@@ -24,7 +24,7 @@ export class ProductsComponent implements OnInit {
   devProds: Product[] = []; 
 
   constructor(private title : Title,private empService : EnquiryService, private authService:AuthService, ) { 
-    this.title.setTitle('arbitrary - products');
+    this.title.setTitle('Techlmaginia Softwares');
   }
 
   ngOnInit(): void {
