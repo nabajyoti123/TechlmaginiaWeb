@@ -60,3 +60,16 @@ mat-sidenav-content {
   .btnn{
     text-align: right;
   }
+
+  .card{
+    display: none;
+    height: 50px;
+    background: rgb(14, 14, 105);
+ }
+
+ @media (max-width: 850px) {
+    .card{
+      display:flex;
+      background: rgb(14, 14, 105);
+     }
+ }
