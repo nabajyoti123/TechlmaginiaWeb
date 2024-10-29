@@ -28,6 +28,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { SignInDialogComponent } from './signIn-dailog/signIn-dailog.component';
 import { ErrorDailogComponent } from './error-dailog/error-dailog.component';
 import {  ReactiveFormsModule } from '@angular/forms';
+import { AdsenseComponent } from './components/adsense/adsense.component';
+
 
 @NgModule({
     declarations: [
@@ -39,7 +41,7 @@ import {  ReactiveFormsModule } from '@angular/forms';
         ListEnquiryComponent,
         SignInDialogComponent,
         ErrorDailogComponent,
-     
+        AdsenseComponent
        
        
            
